@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Flowerbelle Flower Shop POS System
 
 **Web-based Point-of-Sale, Inventory Control System with Predictive Forecasting**
@@ -269,3 +270,6 @@ git add .                          # Stage all changes
 git commit -m "message"            # Commit changes
 git push                           # Push to remote
 git pull                           # Pull latest changes
+=======
+# flowerbelleshop
+>>>>>>> b398593958f49adf7b614342d46a14c5a1abef28

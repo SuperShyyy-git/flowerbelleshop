@@ -3,8 +3,14 @@ import Cookies from 'js-cookie';
 import toast from 'react-hot-toast';
 
 // --- CONFIGURATION ---
-// Ensure this matches your Django backend URL
-const API_BASE_URL = 'http://localhost:8000/api'; 
+// Environment variable should be: https://flowerbelle-backend.onrender.com/api
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000/api';
+
+// Debug: Log the API URL being used
+console.log('🔧 API_BASE_URL:', API_BASE_URL);
+console.log('🔧 Environment Variable:', process.env.REACT_APP_API_URL);
+console.log('🔧 All Environment Variables:', process.env);
+
 const ACCESS_TOKEN_KEY = 'access_token';
 
 const api = axios.create({
